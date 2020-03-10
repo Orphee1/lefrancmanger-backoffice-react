@@ -1,0 +1,170 @@
+/* # # # # # # # # # RESET AND GENERALS # # # # # # # # #  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 0.5rem;
+}
+
+hr {
+  margin: 20px 0px 20px 0px;
+  /* height: 2px; */
+  /* background-color: black; */
+  border: solid 2px #003a58;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.button {
+  background-color: rgb(162, 114, 114); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* # # # # # # # # # HEADER # # # # # # # # #  */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #003a58;
+  color: white;
+  height: 40px;
+}
+.header input {
+  margin: 10px;
+  font-size: 10px;
+}
+
+/* # # # # # # # # # HOME # # # # # # # # #  */
+.home {
+  display: flex;
+  height: calc(100vh - 50px);
+  justify-content: center;
+  background-image: url("./images/pattern_orange.png");
+  padding: 10px;
+}
+
+.home > div {
+  flex: 1 1 200px;
+  margin: 5px;
+  position: relative;
+}
+.home img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  border-radius: 10px;
+}
+.home span {
+  position: absolute;
+  z-index: 10;
+  top: 33%;
+  color: black;
+  font-size: 2rem;
+  background-color: white;
+  opacity: 0.5;
+  width: 100%;
+  height: 100px;
+}
+
+/* # # # # # # # # # PRODUCER & PRODUCT CREATION # # # # # # # # #  */
+
+.creation {
+  background-image: url("./images/pattern_orange.png");
+  height: calc(100vh - 50px);
+}
+
+.creation header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.creation form {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.creation form > :first-child {
+  background-color: rgb(208, 208, 208);
+  flex: 1;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 15px -6px #000000;
+}
+.creation form > :last-child {
+  background-color: rgb(218, 218, 218);
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+
+  box-shadow: 1px 5px 15px -6px #000000;
+}
+
+.creation input {
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+.dropzone {
+  background-color: rgb(204, 175, 175);
+  color: white;
+  height: 50px;
+  width: 100%;
+  border: solid 1px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropzone:hover {
+  cursor: pointer;
+}
+.descriptionbox {
+  height: 100px;
+}
+
+/* # # # # # # # # # # # # # # # # # # # # # PRODUCT # # # # # # # # # # # # # # */
+
+.identified {
+  margin-left: 16px;
+}
+
+.unidentified {
+  display: none;
+}
